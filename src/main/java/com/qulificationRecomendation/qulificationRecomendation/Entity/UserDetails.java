@@ -4,6 +4,8 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.Set;
+
 @Entity
 @Table(name = "user_details")
 @Getter
@@ -30,4 +32,7 @@ public class UserDetails {
 
     @Column(nullable = false)
     private String address;
+
+    @OneToMany(mappedBy = "userDetails", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    private Set<UserQualificationDetails> qualifications;
 }
