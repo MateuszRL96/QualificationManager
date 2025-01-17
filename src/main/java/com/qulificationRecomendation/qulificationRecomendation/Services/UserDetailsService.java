@@ -24,26 +24,7 @@ public class UserDetailsService {
     @Autowired
     private UserQualificationDetailsRepository userQualificationDetailsRepository;
 
-    public UserDetails saveUser(UserDetails userDetails) {
-        userDetails.setPassword(encodePassword(userDetails.getPassword()));
-        return userDetailsRepository.save(userDetails);
-    }
 
-    public UserDetails findByEmail(String email) {
-        return userDetailsRepository.findByEmail(email);
-    }
-
-    private String encodePassword(String password) {
-        return password; // Replace with actual encoding logic
-    }
-
-    public UserDetails loginUser(String email, String password) {
-        UserDetails userDetails = userDetailsRepository.findByEmail(email);
-        if (userDetails != null && userDetails.getPassword().equals(password)) {
-            return userDetails;
-        }
-        return null;
-    }
 
     public void addOrUpdateQualification(Long qualificationId, int level) {
         // Retrieve user details from session
@@ -66,16 +47,6 @@ public class UserDetailsService {
         userQualificationDetailsRepository.deleteById(id);
     }
 
-    public User getUserByEmail(String email) {
-        Optional<User> userOptional = userRepository.findByEmail(email);
-        if (userOptional.isPresent()) {
-            return userOptional.get();
-        } else {
-            // Handle the case where the user is not found
-            // For example, throw an exception or return null
-            throw new UserNotFoundException("User not found with email: " + email);
-        }
-    }
 
     private UserDetails getCurrentUser() {
         // Implement logic to retrieve the current user from the session
