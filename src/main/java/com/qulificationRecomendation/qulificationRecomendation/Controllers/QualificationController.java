@@ -11,9 +11,8 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/qualifications")
-@CrossOrigin(origins = "http://localhost:4200") // Dodaj tę linię
+@CrossOrigin(origins = "http://localhost:4200")
 public class QualificationController {
-
     private final QualificationService qualificationService;
 
     public QualificationController(QualificationService qualificationService) {
