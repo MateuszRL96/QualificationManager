@@ -10,6 +10,7 @@ import com.qulificationRecomendation.qulificationRecomendation.Repo.UserReposito
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -18,67 +19,35 @@ public class UserDetailsService {
     @Autowired
     private UserDetailsRepository userDetailsRepository;
 
-    @Autowired
-    private UserRepository userRepository;
+    public void createUserIfNotExists(String name, String email) {
+        Optional<UserDetails> existingUser = userDetailsRepository.findByEmail(email);
 
-    @Autowired
-    private UserQualificationDetailsRepository userQualificationDetailsRepository;
+        if (!existingUser.isPresent()) {
+            String[] nameParts = name.split(" ", 2);
+            String firstName = nameParts[0];
+            String lastName = nameParts.length > 1 ? nameParts[1] : "";
 
-    public UserDetails saveUser(UserDetails userDetails) {
-        userDetails.setPassword(encodePassword(userDetails.getPassword()));
+            UserDetails newUser = new UserDetails();
+            newUser.setFirstName(firstName);
+            newUser.setLastName(lastName);
+            newUser.setEmail(email);
+            newUser.setPassword("defaultPassword"); // Set a default password or handle it appropriately
+            newUser.setAge(0); // Set a default age or handle it appropriately
+            newUser.setAddress("defaultAddress"); // Set a default address or handle it appropriately
+
+            userDetailsRepository.save(newUser);
+        }
+    }
+
+    public List<UserDetails> getAllUserDetails() {
+        return userDetailsRepository.findAll();
+    }
+
+    public UserDetails saveUserDetails(UserDetails userDetails) {
         return userDetailsRepository.save(userDetails);
     }
 
-    public UserDetails findByEmail(String email) {
-        return userDetailsRepository.findByEmail(email);
-    }
-
-    private String encodePassword(String password) {
-        return password; // Replace with actual encoding logic
-    }
-
-    public UserDetails loginUser(String email, String password) {
-        UserDetails userDetails = userDetailsRepository.findByEmail(email);
-        if (userDetails != null && userDetails.getPassword().equals(password)) {
-            return userDetails;
-        }
-        return null;
-    }
-
-    public void addOrUpdateQualification(Long qualificationId, int level) {
-        // Retrieve user details from session
-        UserDetails userDetails = getCurrentUser();
-        Optional<UserQualificationDetails> existingQualification = userQualificationDetailsRepository.findByUserDetailsAndQualificationId(userDetails, qualificationId);
-        UserQualificationDetails userQualificationDetails;
-        if (existingQualification.isPresent()) {
-            userQualificationDetails = existingQualification.get();
-            userQualificationDetails.setLevel(level);
-        } else {
-            userQualificationDetails = new UserQualificationDetails();
-            userQualificationDetails.setUserDetails(userDetails);
-            userQualificationDetails.setId(qualificationId);
-            userQualificationDetails.setLevel(level);
-        }
-        userQualificationDetailsRepository.save(userQualificationDetails);
-    }
-
-    public void deleteQualification(Long id) {
-        userQualificationDetailsRepository.deleteById(id);
-    }
-
-    public User getUserByEmail(String email) {
-        Optional<User> userOptional = userRepository.findByEmail(email);
-        if (userOptional.isPresent()) {
-            return userOptional.get();
-        } else {
-            // Handle the case where the user is not found
-            // For example, throw an exception or return null
-            throw new UserNotFoundException("User not found with email: " + email);
-        }
-    }
-
-    private UserDetails getCurrentUser() {
-        // Implement logic to retrieve the current user from the session
-        return null;
+    public boolean existsByEmail(String email) {
+        return userDetailsRepository.existsByEmail(email);
     }
 }

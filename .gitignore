@@ -31,3 +31,10 @@ build/
 
 ### VS Code ###
 .vscode/
+
+# Ignorowanie pliku application.properties
+src/main/resources/application.properties
+
+# Ignorowanie plików konfiguracyjnych IDE
+.idea/
+*.iml

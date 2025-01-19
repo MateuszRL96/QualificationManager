@@ -5,15 +5,16 @@ import com.qulificationRecomendation.qulificationRecomendation.Repo.Qualificatio
 import com.qulificationRecomendation.qulificationRecomendation.Services.QualificationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.security.oauth2.core.user.OAuth2User;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
 @RequestMapping("/qualifications")
-@CrossOrigin(origins = "http://localhost:4200") // Dodaj tę linię
+@CrossOrigin(origins = "http://localhost:4200")
 public class QualificationController {
-
     private final QualificationService qualificationService;
 
     public QualificationController(QualificationService qualificationService) {
@@ -21,8 +22,8 @@ public class QualificationController {
     }
 
     @PostMapping
-    public ResponseEntity<Qualification> addQualification(@RequestBody Qualification qualification) {
-        Qualification savedQualification = qualificationService.addQualification(qualification);
+    public ResponseEntity<Qualification> addQualification(@RequestBody Qualification qualification, @AuthenticationPrincipal OAuth2User principal) {
+        Qualification savedQualification = qualificationService.addQualification(qualification, principal);
         return ResponseEntity.ok(savedQualification);
     }
 
