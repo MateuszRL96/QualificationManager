@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/user-details")
+@RequestMapping("/api/user-details") //-> localhost:8080/api/user-details/all
 public class UserDetailsController {
 
     @Autowired
@@ -26,9 +26,8 @@ public class UserDetailsController {
     private UserService userService;
 
     @GetMapping("/all")
-    public ResponseEntity<List<UserDetails>> getAllUserDetails() {
-        List<UserDetails> userDetailsList = userDetailsService.getAllUserDetails();
-        return ResponseEntity.ok(userDetailsList);
+    public List<UserDetails> getAllUserDetails() {
+        return userDetailsService.getAllUserDetails();
     }
 
     @PostMapping("/add")

@@ -16,13 +16,20 @@ public class UserQualificationController {
     private UserQualificationService userQualificationService;
 
     @PostMapping("/add")
-    public ResponseEntity<String> addQualificationToUser(@RequestBody AddQualificationRequest request) {
+    public ResponseEntity<Map<String, String>> addQualificationToUser(@RequestBody AddQualificationRequest request) {
         userQualificationService.addQualificationToUser(request.getUserId(), request.getQualificationId(), request.getLevel());
-        return ResponseEntity.ok("Qualification added to user successfully");
+        Map<String, String> response = Map.of("message", "Qualification added to user successfully");
+        return ResponseEntity.ok(response);
     }
 
     @GetMapping("/all")
     public List<Map<String, Object>> getAllUserQualifications() {
         return userQualificationService.getAllUserQualifications();
+    }
+
+    @GetMapping("/user/{userId}")
+    public ResponseEntity<List<Map<String, Object>>> getQualificationsByUserId(@PathVariable Long userId) {
+        List<Map<String, Object>> qualifications = userQualificationService.getQualificationsByUserId(userId);
+        return ResponseEntity.ok(qualifications);
     }
 }

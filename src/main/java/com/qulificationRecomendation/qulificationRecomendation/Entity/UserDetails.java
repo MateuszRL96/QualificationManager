@@ -1,9 +1,11 @@
 package com.qulificationRecomendation.qulificationRecomendation.Entity;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.List;
 import java.util.Set;
 
 @Entity
@@ -32,7 +34,8 @@ public class UserDetails {
     private String address;
 
     @OneToMany(mappedBy = "userDetails", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    private Set<UserQualificationDetails> qualifications;
+    @JsonManagedReference
+    private List<UserQualificationDetails> qualifications;
 
     public Long getId() {
         return id;
@@ -90,11 +93,5 @@ public class UserDetails {
         this.age = age;
     }
 
-    public Set<UserQualificationDetails> getQualifications() {
-        return qualifications;
-    }
 
-    public void setQualifications(Set<UserQualificationDetails> qualifications) {
-        this.qualifications = qualifications;
-    }
 }

@@ -25,6 +25,10 @@ public class Qualification {
     private List<Skill> skills;
 
     @ManyToOne
+    @JoinColumn(name = "employer_details_id")
+    private EmployerDetails employerDetails;
+
+    @ManyToOne
     @JoinColumn(name = "auth0_user_id")
     private Auth0User auth0User;
 
@@ -66,6 +70,14 @@ public class Qualification {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public EmployerDetails getEmployerDetails() {
+        return employerDetails;
+    }
+
+    public void setEmployerDetails(EmployerDetails employerDetails) {
+        this.employerDetails = employerDetails;
     }
 }
 

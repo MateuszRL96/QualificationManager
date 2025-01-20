@@ -29,6 +29,8 @@ public class SecurityConfig {
                     auth.requestMatchers("/api/user-qualifications/**").permitAll(); // Allow access to /api/user-qualifications endpoints
                     auth.requestMatchers("/api/user-details/**").permitAll(); // Allow access to /api/user-details endpoints
                     auth.requestMatchers("/api/users/create-profile").authenticated();
+                    auth.requestMatchers("/api/auth/login-count").permitAll();
+                    auth.requestMatchers("/api/employer-details/all").permitAll();
                     auth.anyRequest().authenticated();
                 })
                 .formLogin(form -> form

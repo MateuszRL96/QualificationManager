@@ -3,8 +3,9 @@ package com.qulificationRecomendation.qulificationRecomendation.DTO;
 public class AddQualificationRequest {
     private Long userId;
     private Long qualificationId;
-    private int level;
+    private String level;
 
+    // Getters and setters
     public Long getUserId() {
         return userId;
     }
@@ -21,11 +22,11 @@ public class AddQualificationRequest {
         this.qualificationId = qualificationId;
     }
 
-    public int getLevel() {
+    public String getLevel() {
         return level;
     }
 
-    public void setLevel(int level) {
+    public void setLevel(String level) {
         this.level = level;
     }
 }

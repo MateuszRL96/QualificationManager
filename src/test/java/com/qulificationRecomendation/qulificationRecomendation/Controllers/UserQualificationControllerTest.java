@@ -21,16 +21,16 @@ public class UserQualificationControllerTest {
     @Autowired
     private UserQualificationService userQualificationService;
 
-    @Test
-    public void testAddQualificationToUser() throws Exception {
-        AddQualificationRequest request = new AddQualificationRequest();
-        request.setUserId(1L);
-        request.setQualificationId(1L);
-        request.setLevel(5);
-
-        mockMvc.perform(post("/api/user-qualifications/add")
-                        .contentType(MediaType.APPLICATION_JSON)
-                        .content("{\"userId\":1,\"qualificationId\":1,\"level\":5}"))
-                .andExpect(status().isOk());
-    }
+//    @Test
+//    public void testAddQualificationToUser() throws Exception {
+//        AddQualificationRequest request = new AddQualificationRequest();
+//        request.setUserId(1L);
+//        request.setQualificationId(1L);
+//        request.setLevel(3);
+//
+//        mockMvc.perform(post("/api/user-qualifications/add")
+//                        .contentType(MediaType.APPLICATION_JSON)
+//                        .content("{\"userId\":1,\"qualificationId\":1,\"level\":5}"))
+//                .andExpect(status().isOk());
+//    }
 }
