@@ -4,7 +4,12 @@ import com.qulificationRecomendation.qulificationRecomendation.Entity.UserDetail
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+import java.util.Optional;
+
 @Repository
 public interface UserDetailsRepository extends JpaRepository<UserDetails, Long> {
-    UserDetails findByEmail(String email);
+    Optional<UserDetails> findByEmail(String email);
+    boolean existsByEmail(String email);
+    List<UserDetails> findAll();
 }

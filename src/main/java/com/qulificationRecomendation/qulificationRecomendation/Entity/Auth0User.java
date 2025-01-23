@@ -3,6 +3,7 @@ package com.qulificationRecomendation.qulificationRecomendation.Entity;
 import jakarta.persistence.*;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Entity
 @Table(name = "auth0_user")
@@ -15,6 +16,18 @@ public class Auth0User {
     private String sub;
     private String picture;
     private LocalDateTime loginDate;
+
+
+    public List<Qualification> getQualifications() {
+        return qualifications;
+    }
+
+    public void setQualifications(List<Qualification> qualifications) {
+        this.qualifications = qualifications;
+    }
+
+    @OneToMany(mappedBy = "auth0User", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<Qualification> qualifications;
 
     public String getName() {
         return name;
