@@ -10,6 +10,4 @@ import java.util.Optional;
 public interface Auth0UserRepository extends JpaRepository<Auth0User, Long> {
     boolean existsBySub(String sub);
     Optional<Auth0User> findTopByEmailOrderByIdDesc(String email);
-
-
 }
