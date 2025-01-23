@@ -22,6 +22,12 @@ public class UserQualificationController {
         return ResponseEntity.ok(response);
     }
 
+    @DeleteMapping("/delete/{qualificationId}") //localhost:8080/api/user-qualifications/delete/1
+    public ResponseEntity<Void> deleteQualificationFromUser(@PathVariable Long qualificationId) {
+        userQualificationService.deleteQualificationFromUser(qualificationId);
+        return ResponseEntity.noContent().build();
+    }
+
     @GetMapping("/all")
     public List<Map<String, Object>> getAllUserQualifications() {
         return userQualificationService.getAllUserQualifications();

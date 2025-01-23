@@ -10,6 +10,7 @@ import org.springframework.security.oauth2.core.user.OAuth2User;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/qualifications")
@@ -44,6 +45,18 @@ public class QualificationController {
         return qualificationService.getQualificationWithSkills(id)
                 .map(ResponseEntity::ok)
                 .orElse(ResponseEntity.notFound().build());
+    }
+
+    @GetMapping("/search") //localhost:8080/qualifications/search?name=Java
+    public ResponseEntity<List<Long>> findQualificationIdsByName(@RequestParam String name) {
+        List<Long> qualificationIds = qualificationService.findQualificationIdsByName(name);
+        return ResponseEntity.ok(qualificationIds);
+    }
+
+    @GetMapping("/profession/{profession}") //localhost:8080/qualifications/profession/Software%20Engineer
+    public ResponseEntity<List<String[]>> getQualificationsByProfession(@PathVariable String profession) {
+        List<String[]> qualifications = qualificationService.getQualificationsByProfession(profession);
+        return ResponseEntity.ok(qualifications);
     }
 
 }

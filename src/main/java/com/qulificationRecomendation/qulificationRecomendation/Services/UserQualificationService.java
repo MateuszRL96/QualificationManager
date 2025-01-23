@@ -1,5 +1,6 @@
 package com.qulificationRecomendation.qulificationRecomendation.Services;
 
+import com.qulificationRecomendation.qulificationRecomendation.Repo.UserQualificationDetailsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
@@ -11,6 +12,9 @@ import java.util.Map;
 public class UserQualificationService {
     @Autowired
     private JdbcTemplate jdbcTemplate;
+
+    @Autowired
+    private UserQualificationDetailsRepository userQualificationDetailsRepository;
 
     public void addQualificationToUser(Long userId, Long qualificationId, String level) {
         int levelInt = convertLevelToInt(level);
@@ -42,5 +46,10 @@ public class UserQualificationService {
                 "JOIN qualifications q ON uqd.qualification_id = q.id " +
                 "WHERE uqd.user_id = ?";
         return jdbcTemplate.queryForList(sql, userId);
+    }
+
+    public void deleteQualificationFromUser(Long qualificationId) {
+        String sql = "DELETE FROM user_qualification_details WHERE user_id = 1 AND qualification_id = ?";
+        jdbcTemplate.update(sql, qualificationId);
     }
 }

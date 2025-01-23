@@ -10,7 +10,12 @@ import org.springframework.security.oauth2.core.user.OAuth2User;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
@@ -83,4 +88,31 @@ public class QualificationService {
             System.out.println("User not found.");
         }
     }
+
+    public List<Long> findQualificationIdsByName(String name) {
+        return qualificationRepository.findByNameContainingIgnoreCase(name)
+                .stream()
+                .map(Qualification::getId)
+                .collect(Collectors.toList());
+    }
+
+    public List<String[]> getQualificationsByProfession(String profession) {
+        List<String[]> qualifications = new ArrayList<>();
+        String line;
+        String csvFile = "src/main/java/com/qulificationRecomendation/qulificationRecomendation/DL4J/Data/dataset.csv";
+
+        try (BufferedReader br = new BufferedReader(new FileReader(csvFile))) {
+            while ((line = br.readLine()) != null) {
+                String[] values = line.split(",");
+                if (values[0].equalsIgnoreCase(profession)) {
+                    qualifications.add(new String[]{values[1], values[2]});
+                }
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return qualifications;
+    }
 }
+

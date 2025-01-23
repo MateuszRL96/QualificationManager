@@ -1,0 +1,556 @@
+Zawód,Kwalifikacje,Poziom zaawansowania
+Backend Developer,Node.js,2
+Backend Developer,Azure,2
+Backend Developer,HTML,1
+Backend Developer,JavaScript,3
+Backend Developer,Slack,1
+Frontend Developer,Bootstrap,1
+Frontend Developer,Spring Boot,1
+Frontend Developer,Go,1
+Frontend Developer,Python,2
+Frontend Developer,GCP,1
+Frontend Developer,Ruby on Rails,1
+Frontend Developer,Rust,1
+Frontend Developer,Slack,1
+Frontend Developer,Vue.js,2
+Frontend Developer,TypeScript,2
+Frontend Developer,SQL,2
+Frontend Developer,React,1
+Frontend Developer,C++,2
+Frontend Developer,JavaScript,2
+Frontend Developer,Angular,2
+Frontend Developer,Terraform,2
+Frontend Developer,GitHub,1
+Frontend Developer,Java,1
+Frontend Developer,Kotlin,2
+Frontend Developer,Kubernetes,2
+Frontend Developer,Jenkins,1
+Frontend Developer,AWS,2
+Frontend Developer,Asana,1
+Frontend Developer,Docker,1
+Frontend Developer,GitLab,1
+Full Stack Developer,Django,2
+Full Stack Developer,Node.js,1
+Full Stack Developer,Symfony,2
+Full Stack Developer,GitHub,1
+Full Stack Developer,Puppet,1
+Full Stack Developer,C#,3
+Full Stack Developer,Ansible,1
+Full Stack Developer,Flask,1
+Full Stack Developer,Chef,1
+Full Stack Developer,Python,2
+Full Stack Developer,Kotlin,1
+Full Stack Developer,Asana,1
+Full Stack Developer,Go,2
+Full Stack Developer,Slack,1
+Full Stack Developer,PHP,1
+Full Stack Developer,JavaScript,2
+Full Stack Developer,Ruby on Rails,1
+Full Stack Developer,Ruby,1
+Full Stack Developer,CSS,1
+Full Stack Developer,Spring Boot,2
+Full Stack Developer,Java,2
+Full Stack Developer,HTML,1
+Full Stack Developer,Jenkins,1
+Full Stack Developer,SQL,1
+Full Stack Developer,Git,1
+Full Stack Developer,TypeScript,2
+Full Stack Developer,Rust,1
+Full Stack Developer,Azure,1
+Full Stack Developer,Angular,1
+Full Stack Developer,Kubernetes,2
+Full Stack Developer,Terraform,1
+Full Stack Developer,Confluence,1
+Full Stack Developer,Laravel,2
+Full Stack Developer,Express.js,2
+Full Stack Developer,GCP,3
+Full Stack Developer,AWS,2
+Full Stack Developer,ASP.NET,2
+Full Stack Developer,GitLab,1
+Full Stack Developer,React,2
+Full Stack Developer,C++,2
+Full Stack Developer,Bootstrap,1
+Full Stack Developer,Swift,2
+Full Stack Developer,Bitbucket,1
+Full Stack Developer,Vue.js,1
+Data Scientist,Spring Boot,1
+Data Scientist,SQL,2
+Data Scientist,AWS,1
+Data Scientist,Node.js,1
+Data Scientist,Docker,2
+Data Scientist,Bootstrap,1
+Data Scientist,Python,2
+Data Scientist,Express.js,2
+Data Scientist,Laravel,1
+Data Scientist,Trello,1
+Data Scientist,Rust,1
+Data Scientist,Angular,2
+Data Scientist,Flask,2
+Data Scientist,GitLab,1
+Data Scientist,Vue.js,2
+Data Scientist,C++,2
+Data Scientist,JavaScript,2
+Data Scientist,Confluence,1
+Data Scientist,Slack,1
+Data Scientist,Kubernetes,1
+Data Scientist,Asana,1
+Data Scientist,React,2
+Data Scientist,Azure,3
+Data Scientist,C#,1
+Data Scientist,Symfony,2
+Data Scientist,Ansible,1
+Data Scientist,CSS,1
+Data Scientist,Ruby,1
+Data Scientist,Kotlin,1
+Data Scientist,Django,1
+Data Scientist,ASP.NET,1
+Data Scientist,HTML,1
+Data Scientist,TypeScript,2
+Data Scientist,PHP,1
+Data Scientist,GCP,1
+Data Scientist,JIRA,2
+Data Scientist,Chef,2
+Data Scientist,Puppet,2
+Data Scientist,Terraform,2
+Data Scientist,Jenkins,1
+Data Scientist,GitHub,1
+Data Scientist,Swift,1
+Data Scientist,Go,2
+Data Scientist,Git,1
+Data Scientist,Ruby on Rails,2
+Data Scientist,Java,3
+Machine Learning Engineer,Kubernetes,1
+Machine Learning Engineer,Node.js,2
+Machine Learning Engineer,CSS,1
+Machine Learning Engineer,Azure,1
+Machine Learning Engineer,React,2
+Machine Learning Engineer,Chef,2
+Machine Learning Engineer,Spring Boot,2
+Machine Learning Engineer,JIRA,1
+Machine Learning Engineer,SQL,1
+Machine Learning Engineer,Bitbucket,1
+Machine Learning Engineer,TypeScript,2
+Machine Learning Engineer,Symfony,1
+Machine Learning Engineer,Slack,1
+Machine Learning Engineer,JavaScript,2
+Machine Learning Engineer,Django,2
+Machine Learning Engineer,GitLab,1
+Machine Learning Engineer,Bootstrap,1
+Machine Learning Engineer,Jenkins,1
+Machine Learning Engineer,Rust,1
+Machine Learning Engineer,Docker,2
+Machine Learning Engineer,AWS,1
+Machine Learning Engineer,Express.js,1
+Machine Learning Engineer,Trello,1
+Machine Learning Engineer,Kotlin,1
+DevOps Engineer,Asana,1
+DevOps Engineer,Jenkins,1
+DevOps Engineer,Kotlin,1
+DevOps Engineer,GitHub,1
+DevOps Engineer,Java,2
+DevOps Engineer,Bitbucket,1
+DevOps Engineer,Express.js,2
+DevOps Engineer,HTML,1
+DevOps Engineer,Ruby on Rails,2
+DevOps Engineer,JavaScript,1
+DevOps Engineer,Puppet,1
+DevOps Engineer,Slack,1
+DevOps Engineer,JIRA,2
+DevOps Engineer,SQL,2
+DevOps Engineer,C#,3
+DevOps Engineer,Rust,1
+DevOps Engineer,Go,2
+DevOps Engineer,Ansible,2
+DevOps Engineer,Symfony,2
+DevOps Engineer,ASP.NET,1
+Database Administrator,Ruby on Rails,2
+Database Administrator,Django,1
+Database Administrator,Azure,1
+Database Administrator,C++,1
+Database Administrator,Trello,1
+Database Administrator,ASP.NET,2
+Database Administrator,GitHub,1
+Database Administrator,JIRA,1
+Database Administrator,CSS,1
+Database Administrator,SQL,1
+Database Administrator,Java,2
+Database Administrator,Asana,1
+Database Administrator,TypeScript,2
+Database Administrator,Rust,2
+Database Administrator,Vue.js,1
+Database Administrator,Bootstrap,1
+Database Administrator,Kotlin,2
+Database Administrator,PHP,2
+Database Administrator,Git,1
+Database Administrator,Jenkins,2
+Database Administrator,Spring Boot,1
+Database Administrator,Puppet,1
+Database Administrator,Terraform,1
+Database Administrator,Go,1
+Database Administrator,Bitbucket,1
+Database Administrator,JavaScript,2
+Database Administrator,Flask,1
+Database Administrator,Confluence,1
+Database Administrator,AWS,1
+Database Administrator,Node.js,2
+Database Administrator,Ruby,2
+Database Administrator,Laravel,2
+Database Administrator,Swift,2
+Database Administrator,Angular,2
+Database Administrator,React,2
+Database Administrator,Chef,1
+Database Administrator,GitLab,1
+Database Administrator,GCP,3
+Database Administrator,C#,1
+Database Administrator,Symfony,1
+Database Administrator,Python,1
+Database Administrator,Express.js,1
+Cloud Engineer,Puppet,1
+Cloud Engineer,Node.js,2
+Cloud Engineer,PHP,2
+Cloud Engineer,JIRA,2
+Cloud Engineer,Symfony,1
+Cloud Engineer,Git,1
+Cloud Engineer,Django,2
+Cloud Engineer,Express.js,2
+Cloud Engineer,JavaScript,1
+Cloud Engineer,Azure,3
+Cloud Engineer,GitHub,1
+Cloud Engineer,GCP,3
+Cloud Engineer,Asana,1
+Cloud Engineer,Confluence,1
+Cloud Engineer,Bitbucket,1
+Cloud Engineer,Swift,1
+Cloud Engineer,Kubernetes,1
+Cloud Engineer,C#,1
+Cloud Engineer,Trello,1
+Cloud Engineer,Laravel,2
+Cloud Engineer,SQL,2
+Cloud Engineer,AWS,3
+Cloud Engineer,Angular,1
+Cloud Engineer,Rust,2
+Cloud Engineer,Java,2
+Cloud Engineer,CSS,1
+Cloud Engineer,Kotlin,1
+Cloud Engineer,Flask,1
+Cloud Engineer,Go,1
+Cloud Engineer,Python,2
+Cloud Engineer,Ansible,1
+Cloud Engineer,Slack,1
+Cloud Engineer,Ruby on Rails,2
+Cloud Engineer,ASP.NET,2
+Cloud Engineer,Vue.js,1
+Cloud Engineer,Chef,2
+Cloud Engineer,React,2
+Cloud Engineer,Ruby,1
+Cloud Engineer,TypeScript,3
+Cloud Engineer,C++,1
+Cloud Engineer,Bootstrap,1
+Cloud Engineer,Terraform,2
+Cloud Engineer,Jenkins,1
+Cloud Engineer,GitLab,1
+Cybersecurity Specialist,Go,1
+Cybersecurity Specialist,GCP,2
+Cybersecurity Specialist,Express.js,1
+Cybersecurity Specialist,Bootstrap,1
+Cybersecurity Specialist,JavaScript,3
+Cybersecurity Specialist,Rust,2
+Cybersecurity Specialist,C++,1
+Cybersecurity Specialist,Docker,1
+Cybersecurity Specialist,Vue.js,1
+Cybersecurity Specialist,Chef,1
+Cybersecurity Specialist,Kotlin,1
+Cybersecurity Specialist,C#,3
+Cybersecurity Specialist,PHP,1
+Cybersecurity Specialist,Terraform,2
+Cybersecurity Specialist,Symfony,2
+Cybersecurity Specialist,Ansible,1
+Cybersecurity Specialist,Confluence,1
+Cybersecurity Specialist,GitHub,1
+Cybersecurity Specialist,Spring Boot,2
+Cybersecurity Specialist,Flask,2
+Cybersecurity Specialist,Angular,1
+Cybersecurity Specialist,Asana,1
+Cybersecurity Specialist,SQL,1
+Cybersecurity Specialist,Jenkins,2
+Cybersecurity Specialist,React,2
+Cybersecurity Specialist,Python,2
+Cybersecurity Specialist,AWS,3
+Cybersecurity Specialist,Node.js,1
+Cybersecurity Specialist,Azure,3
+Cybersecurity Specialist,Java,3
+Cybersecurity Specialist,Bitbucket,1
+Cybersecurity Specialist,Ruby on Rails,1
+Cybersecurity Specialist,Laravel,1
+Cybersecurity Specialist,Django,2
+Cybersecurity Specialist,Swift,3
+Cybersecurity Specialist,ASP.NET,1
+Cybersecurity Specialist,Git,1
+Cybersecurity Specialist,Trello,1
+Cybersecurity Specialist,Ruby,2
+Cybersecurity Specialist,HTML,1
+Cybersecurity Specialist,JIRA,1
+Cybersecurity Specialist,GitLab,1
+Cybersecurity Specialist,Puppet,1
+Cybersecurity Specialist,TypeScript,2
+Mobile Developer,Puppet,2
+Mobile Developer,Ruby,1
+Mobile Developer,Docker,2
+Mobile Developer,JavaScript,2
+Mobile Developer,HTML,1
+Mobile Developer,Git,1
+Mobile Developer,Spring Boot,1
+Mobile Developer,Symfony,1
+Mobile Developer,Confluence,1
+Mobile Developer,TypeScript,2
+Mobile Developer,Ruby on Rails,1
+Mobile Developer,Jenkins,1
+Mobile Developer,Java,3
+Mobile Developer,React,2
+Mobile Developer,PHP,2
+Mobile Developer,AWS,3
+Mobile Developer,Terraform,2
+Mobile Developer,GitHub,1
+Mobile Developer,Swift,3
+Mobile Developer,Python,2
+Mobile Developer,JIRA,2
+Mobile Developer,C#,2
+Mobile Developer,Laravel,2
+Mobile Developer,Chef,1
+Mobile Developer,Vue.js,2
+Mobile Developer,Azure,1
+Mobile Developer,SQL,1
+Mobile Developer,Trello,1
+Mobile Developer,Asana,1
+Mobile Developer,Express.js,2
+Mobile Developer,Kubernetes,2
+Mobile Developer,C++,1
+Mobile Developer,Flask,1
+Mobile Developer,Django,1
+Mobile Developer,Kotlin,2
+Mobile Developer,Bootstrap,1
+Mobile Developer,Angular,1
+Mobile Developer,GitLab,1
+Mobile Developer,Go,1
+Mobile Developer,CSS,1
+Mobile Developer,Node.js,2
+Mobile Developer,Ansible,2
+Mobile Developer,Bitbucket,1
+Mobile Developer,Slack,1
+Mobile Developer,Rust,1
+Mobile Developer,GCP,3
+Mobile Developer,ASP.NET,1
+Game Developer,Docker,1
+Game Developer,JIRA,2
+Game Developer,React,2
+IT Project Manager,Python,1
+IT Project Manager,Bitbucket,1
+IT Project Manager,GitLab,1
+IT Project Manager,Confluence,1
+IT Project Manager,Bootstrap,1
+IT Project Manager,Chef,1
+IT Project Manager,Spring Boot,1
+IT Project Manager,Vue.js,2
+IT Project Manager,Ruby,2
+IT Project Manager,Docker,2
+IT Project Manager,Jenkins,1
+IT Project Manager,Terraform,1
+IT Project Manager,Swift,1
+IT Project Manager,Kotlin,2
+IT Project Manager,Trello,1
+IT Project Manager,Ruby on Rails,2
+IT Project Manager,JIRA,1
+IT Project Manager,Puppet,1
+IT Project Manager,Git,1
+IT Project Manager,Azure,2
+IT Project Manager,React,2
+IT Project Manager,C#,2
+IT Project Manager,ASP.NET,1
+IT Project Manager,TypeScript,3
+IT Project Manager,GCP,2
+IT Project Manager,Java,3
+IT Project Manager,Kubernetes,1
+IT Project Manager,JavaScript,1
+IT Project Manager,C++,2
+IT Project Manager,Rust,1
+Software Tester (QA Engineer),JIRA,2
+Software Tester (QA Engineer),Express.js,1
+Software Tester (QA Engineer),Java,3
+Software Tester (QA Engineer),GitHub,1
+Software Tester (QA Engineer),Symfony,1
+Software Tester (QA Engineer),Django,2
+Software Tester (QA Engineer),SQL,1
+Software Tester (QA Engineer),Bootstrap,1
+Software Tester (QA Engineer),Go,2
+Software Tester (QA Engineer),Azure,2
+Software Tester (QA Engineer),Kotlin,1
+Software Tester (QA Engineer),AWS,3
+Software Tester (QA Engineer),Git,1
+Software Tester (QA Engineer),C#,2
+Software Tester (QA Engineer),Ansible,2
+Software Tester (QA Engineer),PHP,2
+Software Tester (QA Engineer),ASP.NET,1
+Software Tester (QA Engineer),Spring Boot,1
+Software Tester (QA Engineer),Slack,1
+Software Tester (QA Engineer),Laravel,1
+Software Tester (QA Engineer),Confluence,1
+Software Tester (QA Engineer),Bitbucket,1
+Software Tester (QA Engineer),Vue.js,2
+Software Tester (QA Engineer),Rust,1
+Software Tester (QA Engineer),Trello,1
+Software Tester (QA Engineer),Angular,2
+Software Tester (QA Engineer),Puppet,1
+Software Tester (QA Engineer),Docker,1
+UX/UI Designer,React,1
+UX/UI Designer,Chef,1
+UX/UI Designer,Node.js,1
+UX/UI Designer,Git,1
+UX/UI Designer,SQL,2
+UX/UI Designer,Ruby on Rails,1
+UX/UI Designer,Angular,2
+UX/UI Designer,HTML,1
+UX/UI Designer,GCP,1
+UX/UI Designer,Kubernetes,2
+UX/UI Designer,TypeScript,1
+UX/UI Designer,Python,1
+UX/UI Designer,Flask,2
+UX/UI Designer,Django,1
+UX/UI Designer,JavaScript,3
+UX/UI Designer,CSS,1
+UX/UI Designer,Go,2
+UX/UI Designer,GitLab,1
+UX/UI Designer,Jenkins,1
+UX/UI Designer,AWS,3
+UX/UI Designer,Terraform,1
+UX/UI Designer,Spring Boot,2
+UX/UI Designer,Swift,2
+UX/UI Designer,Puppet,2
+UX/UI Designer,Asana,1
+UX/UI Designer,Ruby,1
+UX/UI Designer,ASP.NET,1
+UX/UI Designer,Confluence,1
+UX/UI Designer,Bitbucket,1
+UX/UI Designer,Vue.js,1
+UX/UI Designer,Laravel,1
+UX/UI Designer,Ansible,1
+UX/UI Designer,JIRA,1
+UX/UI Designer,PHP,2
+UX/UI Designer,Docker,1
+UX/UI Designer,Kotlin,1
+UX/UI Designer,Slack,1
+UX/UI Designer,C#,3
+UX/UI Designer,Java,3
+UX/UI Designer,Trello,1
+UX/UI Designer,C++,3
+UX/UI Designer,GitHub,1
+UX/UI Designer,Azure,3
+UX/UI Designer,Bootstrap,1
+UX/UI Designer,Rust,1
+IT Business Analyst,Azure,1
+IT Business Analyst,C++,2
+IT Business Analyst,Ansible,1
+IT Business Analyst,GCP,2
+IT Business Analyst,Python,1
+IT Business Analyst,HTML,1
+IT Business Analyst,Java,3
+IT Business Analyst,Ruby on Rails,2
+IT Business Analyst,GitLab,1
+IT Business Analyst,Symfony,2
+IT Business Analyst,Trello,1
+IT Business Analyst,SQL,2
+IT Business Analyst,AWS,1
+IT Business Analyst,Flask,1
+IT Business Analyst,Chef,1
+IT Business Analyst,ASP.NET,1
+IT Business Analyst,Confluence,1
+IT Business Analyst,Terraform,2
+IT Business Analyst,Slack,1
+IT Business Analyst,Express.js,2
+IT Business Analyst,JIRA,2
+IT Business Analyst,Go,2
+IT Business Analyst,Bootstrap,1
+IT Business Analyst,Bitbucket,1
+IT Business Analyst,Django,2
+IT Business Analyst,Ruby,1
+IT Business Analyst,Laravel,1
+IT Business Analyst,Docker,2
+Blockchain Developer,Rust,2
+Blockchain Developer,Chef,1
+Blockchain Developer,Jenkins,2
+Blockchain Developer,React,2
+Blockchain Developer,Java,1
+Blockchain Developer,Angular,1
+Blockchain Developer,Slack,1
+Blockchain Developer,Node.js,1
+Blockchain Developer,ASP.NET,2
+Blockchain Developer,Go,2
+Blockchain Developer,Docker,1
+Blockchain Developer,Ruby,2
+Blockchain Developer,AWS,1
+Blockchain Developer,Kubernetes,2
+Blockchain Developer,C++,1
+Blockchain Developer,Vue.js,2
+Blockchain Developer,JavaScript,2
+Blockchain Developer,Trello,1
+Blockchain Developer,Python,2
+Blockchain Developer,Terraform,1
+Blockchain Developer,JIRA,2
+Blockchain Developer,Bootstrap,1
+Network Engineer,Kotlin,2
+Network Engineer,SQL,2
+Network Engineer,Java,1
+Network Engineer,C++,1
+Network Engineer,Spring Boot,1
+Network Engineer,AWS,1
+Network Engineer,Azure,2
+Network Engineer,Puppet,2
+Network Engineer,Slack,1
+Network Engineer,TypeScript,2
+Artificial Intelligence Researcher,Vue.js,1
+Artificial Intelligence Researcher,HTML,1
+Artificial Intelligence Researcher,Symfony,1
+Artificial Intelligence Researcher,Docker,2
+Artificial Intelligence Researcher,Ruby on Rails,1
+Artificial Intelligence Researcher,GCP,2
+Artificial Intelligence Researcher,JIRA,2
+Artificial Intelligence Researcher,Spring Boot,1
+Artificial Intelligence Researcher,JavaScript,3
+Artificial Intelligence Researcher,Swift,1
+Artificial Intelligence Researcher,Angular,1
+Artificial Intelligence Researcher,Chef,2
+Artificial Intelligence Researcher,GitLab,1
+Artificial Intelligence Researcher,CSS,1
+Artificial Intelligence Researcher,Python,1
+Artificial Intelligence Researcher,Slack,1
+Artificial Intelligence Researcher,Java,3
+Artificial Intelligence Researcher,Trello,1
+Artificial Intelligence Researcher,Jenkins,1
+Artificial Intelligence Researcher,Node.js,1
+Artificial Intelligence Researcher,Ansible,2
+Artificial Intelligence Researcher,C#,2
+Artificial Intelligence Researcher,Asana,1
+Artificial Intelligence Researcher,Express.js,1
+Artificial Intelligence Researcher,Puppet,2
+Artificial Intelligence Researcher,AWS,1
+Artificial Intelligence Researcher,Ruby,2
+Artificial Intelligence Researcher,Laravel,2
+Artificial Intelligence Researcher,SQL,1
+Artificial Intelligence Researcher,Git,1
+Artificial Intelligence Researcher,ASP.NET,2
+Artificial Intelligence Researcher,Confluence,1
+Artificial Intelligence Researcher,React,1
+Artificial Intelligence Researcher,Go,2
+Artificial Intelligence Researcher,Kubernetes,2
+Artificial Intelligence Researcher,Bitbucket,1
+Artificial Intelligence Researcher,Flask,2
+Artificial Intelligence Researcher,C++,3
+Artificial Intelligence Researcher,Kotlin,2
+Artificial Intelligence Researcher,PHP,2
+Artificial Intelligence Researcher,Terraform,1
+Artificial Intelligence Researcher,GitHub,1
+Artificial Intelligence Researcher,Bootstrap,1
+Site Reliability Engineer (SRE),Trello,1
+Site Reliability Engineer (SRE),CSS,1
+Technical Support Specialist,GitLab,1
+Technical Support Specialist,Java,2
+Technical Support Specialist,C#,3

@@ -1,0 +1,1 @@
+ALTER TABLE user_qualification_details ADD COLUMN user_details_id BIGINT;

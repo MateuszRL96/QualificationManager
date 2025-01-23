@@ -26,11 +26,16 @@ public class SecurityConfig {
                     auth.requestMatchers("/", "/login", "/css/**").permitAll();
                     auth.requestMatchers("/favicon.ico").permitAll();
                     auth.requestMatchers("/error").permitAll();
-                    auth.requestMatchers("/api/user-qualifications/**").permitAll(); // Allow access to /api/user-qualifications endpoints
+                    auth.requestMatchers("/api/user-qualifications/**").permitAll();
+                    auth.requestMatchers("/api/user-qualifications/delete/**").permitAll();
                     auth.requestMatchers("/api/user-details/**").permitAll(); // Allow access to /api/user-details endpoints
                     auth.requestMatchers("/api/users/create-profile").authenticated();
                     auth.requestMatchers("/api/auth/login-count").permitAll();
                     auth.requestMatchers("/api/employer-details/all").permitAll();
+                    auth.requestMatchers("/recommendations/**").permitAll();
+                    auth.requestMatchers("/data-preparation/**").permitAll();
+                    auth.requestMatchers("/qualifications/search").permitAll();
+                    auth.requestMatchers("/qualifications/profession/**").permitAll();
                     auth.anyRequest().authenticated();
                 })
                 .formLogin(form -> form

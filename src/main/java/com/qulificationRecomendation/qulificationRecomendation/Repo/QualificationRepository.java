@@ -10,4 +10,5 @@ import java.util.List;
 @Repository
 public interface QualificationRepository extends JpaRepository<Qualification, Long> {
     List<Qualification> findByAuth0User(Auth0User user);
+    List<Qualification> findByNameContainingIgnoreCase(String name);
 }
