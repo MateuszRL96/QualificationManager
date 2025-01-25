@@ -1,4 +1,3 @@
-version: "3.8"
 services:
   db:
     image: postgres:latest
@@ -11,5 +10,18 @@ services:
       - "5433:5432"
     volumes:
       - db_data:/var/lib/postgresql/data
+
+  app:
+    build: .
+    container_name: qualificationApp
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/qualification_db
+      SPRING_DATASOURCE_USERNAME: mateusz
+      SPRING_DATASOURCE_PASSWORD: 12345678
+
 volumes:
   db_data:

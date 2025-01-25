@@ -1,12 +1,7 @@
 package com.qulificationRecomendation.qulificationRecomendation.Services;
 
-import com.qulificationRecomendation.qulificationRecomendation.Entity.User;
 import com.qulificationRecomendation.qulificationRecomendation.Entity.UserDetails;
-import com.qulificationRecomendation.qulificationRecomendation.Entity.UserQualificationDetails;
-import com.qulificationRecomendation.qulificationRecomendation.Exceptions.UserNotFoundException;
 import com.qulificationRecomendation.qulificationRecomendation.Repo.UserDetailsRepository;
-import com.qulificationRecomendation.qulificationRecomendation.Repo.UserQualificationDetailsRepository;
-import com.qulificationRecomendation.qulificationRecomendation.Repo.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -35,6 +35,7 @@ public class SecurityConfig {
                     auth.requestMatchers("/recommendations/**").permitAll();
                     auth.requestMatchers("/data-preparation/**").permitAll();
                     auth.requestMatchers("/qualifications/search").permitAll();
+                    auth.requestMatchers("/qualifications/**").permitAll();
                     auth.requestMatchers("/qualifications/profession/**").permitAll();
                     auth.anyRequest().authenticated();
                 })
