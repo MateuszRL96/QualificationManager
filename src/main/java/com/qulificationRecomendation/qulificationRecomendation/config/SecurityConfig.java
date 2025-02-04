@@ -37,6 +37,8 @@ public class SecurityConfig {
                     auth.requestMatchers("/qualifications/search").permitAll();
                     auth.requestMatchers("/qualifications/**").permitAll();
                     auth.requestMatchers("/qualifications/profession/**").permitAll();
+                    auth.requestMatchers("/api/udemy-category/**").permitAll();
+                    auth.requestMatchers("/api/udemy-category-data/**").permitAll();
                     auth.anyRequest().authenticated();
                 })
                 .formLogin(form -> form
