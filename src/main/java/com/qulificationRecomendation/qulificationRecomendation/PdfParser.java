@@ -1,0 +1,17 @@
+package com.qulificationRecomendation.qulificationRecomendation;
+
+import org.apache.pdfbox.pdmodel.PDDocument;
+import org.apache.pdfbox.text.PDFTextStripper;
+
+import java.io.File;
+import java.io.IOException;
+
+public class PdfParser {
+
+    public static String extractText(String filePath) throws IOException {
+        try (PDDocument document = PDDocument.load(new File(filePath))) {
+            PDFTextStripper pdfStripper = new PDFTextStripper();
+            return pdfStripper.getText(document);
+        }
+    }
+}
