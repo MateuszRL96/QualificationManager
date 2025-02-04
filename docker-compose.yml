@@ -19,7 +19,7 @@ services:
     depends_on:
       - db
     environment:
-      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/qualification_db
+      SPRING_DATASOURCE_URL: jdbc:postgresql://localhost:5433/qualification_db
       SPRING_DATASOURCE_USERNAME: mateusz
       SPRING_DATASOURCE_PASSWORD: 12345678
 
