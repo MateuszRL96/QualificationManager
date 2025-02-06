@@ -33,6 +33,7 @@ public class SecurityConfig {
                     auth.requestMatchers("/", "/login", "/css/**").permitAll();
                     auth.requestMatchers("/favicon.ico").permitAll();
                     auth.requestMatchers("/error").permitAll();
+                    auth.requestMatchers("/admin/**").hasRole("ADMIN");
                     auth.requestMatchers("/api/user-qualifications/**").permitAll();
                     auth.requestMatchers("/api/user-qualifications/delete/**").permitAll();
                     auth.requestMatchers("/api/user-details/**").permitAll();
