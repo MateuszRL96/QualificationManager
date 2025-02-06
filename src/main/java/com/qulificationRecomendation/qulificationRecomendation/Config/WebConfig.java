@@ -1,4 +1,4 @@
-package com.qulificationRecomendation.qulificationRecomendation.config;
+package com.qulificationRecomendation.qulificationRecomendation.Config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

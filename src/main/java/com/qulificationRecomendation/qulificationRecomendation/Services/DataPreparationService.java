@@ -46,29 +46,17 @@ public class DataPreparationService {
             }
         }
 
-        // Create INDArray from the input array
         INDArray inputArray = Nd4j.create(input).reshape(1, input.length);
-
-        // Log the input array
         logger.info("Input array: {}", inputArray);
 
-        // Perform model inference
         INDArray output = model.output(inputArray);
-
-        // Log the output array
         logger.info("Output array: {}", output);
 
-        // Get the index of the predicted profession
         int professionIndex = Nd4j.argMax(output, 1).getInt(0);
-
-        // Log the predicted profession index
         logger.info("Predicted profession index: {}", professionIndex);
 
-        // Map the index to the profession
         String[] professions = {"Backend Developer", "Frontend Developer", "Full Stack Developer", "Data Scientist", "Machine Learning Engineer", "DevOps Engineer", "Database Administrator", "Cloud Engineer", "Cybersecurity Specialist", "Mobile Developer"};
         String proposedProfession = professions[professionIndex];
-
-        // Log the proposed profession
         logger.info("Proposed profession: {}", proposedProfession);
 
         return proposedProfession;
