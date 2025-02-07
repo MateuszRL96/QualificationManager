@@ -1,6 +1,7 @@
 package com.qulificationRecomendation.qulificationRecomendation.Entity;
 
 
+import com.qulificationRecomendation.qulificationRecomendation.Entity.Enum.Role;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -18,8 +19,16 @@ public class User {
     @Column(nullable = false)
     private String name;
 
+    public Role getRole() {
+        return role;
+    }
+
+    public void setRole(Role role) {
+        this.role = role;
+    }
+
     @Column(nullable = false)
-    private String role;
+    private Role role;
 
     public String getEmail() {
         return email;
@@ -37,11 +46,4 @@ public class User {
         this.name = name;
     }
 
-    public String getRole() {
-        return role;
-    }
-
-    public void setRole(String role) {
-        this.role = role;
-    }
 }

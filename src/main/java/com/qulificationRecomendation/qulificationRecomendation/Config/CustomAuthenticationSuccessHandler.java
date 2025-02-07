@@ -1,4 +1,4 @@
-package com.qulificationRecomendation.qulificationRecomendation.config;
+package com.qulificationRecomendation.qulificationRecomendation.Config;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

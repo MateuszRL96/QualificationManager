@@ -1,4 +1,4 @@
-package com.qulificationRecomendation.qulificationRecomendation.config;
+package com.qulificationRecomendation.qulificationRecomendation.Config;
 
 import org.deeplearning4j.nn.multilayer.MultiLayerNetwork;
 import org.deeplearning4j.nn.conf.MultiLayerConfiguration;
