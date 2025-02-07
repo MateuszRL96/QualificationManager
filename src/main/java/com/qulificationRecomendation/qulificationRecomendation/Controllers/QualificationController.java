@@ -4,6 +4,7 @@ import com.qulificationRecomendation.qulificationRecomendation.Entity.Qualificat
 import com.qulificationRecomendation.qulificationRecomendation.Repo.QualificationRepository;
 import com.qulificationRecomendation.qulificationRecomendation.Services.QualificationService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.security.oauth2.core.user.OAuth2User;
@@ -57,6 +58,14 @@ public class QualificationController {
     public ResponseEntity<List<String[]>> getQualificationsByProfession(@PathVariable String profession) {
         List<String[]> qualifications = qualificationService.getQualificationsByProfession(profession);
         return ResponseEntity.ok(qualifications);
+    }
+    @GetMapping("/api/qualifications")
+    public ResponseEntity<String> getQualifications(@RequestParam String id) {
+        if (id == null || id.isEmpty() || id.contains("'")) {
+            return new ResponseEntity<>("Invalid input", HttpStatus.BAD_REQUEST);
+        }
+        // Add your logic to handle the request here
+        return new ResponseEntity<>("Valid input", HttpStatus.OK);
     }
 
 }
